@@ -56,7 +56,7 @@ public class Main {
     try {
       Connection con = getConnection();
       Statement stmt = con.createStatement();
-      String sql = "INSERT INTO findmytaxi.location (lon, lat, date, time) VALUES ('" + longitude + "','" + latitude + "','" + date + "','" + time + "')";
+      String sql = "INSERT INTO location (lon, lat, date, time) VALUES ('" + longitude + "','" + latitude + "','" + date + "','" + time + "')";
       stmt.executeUpdate(sql);
       con.close(); 
     }
