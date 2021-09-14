@@ -68,7 +68,7 @@ public class Main {
   public static Connection getConnection() {
     try{
       Class.forName("com.mysql.cj.jdbc.Driver");  
-      Connection con=DriverManager.getConnection("jdbc:mysql://findmytaxi.cw0doizsxky1.us-east-2.rds.amazonaws.com:3306/findmytaxi?jdbcCompliantTruncation=false","root","");
+      Connection con=DriverManager.getConnection("jdbc:mysql://findmytaxi.cw0doizsxky1.us-east-2.rds.amazonaws.com:3306/findmytaxi?jdbcCompliantTruncation=false","root","Uninorte2021");
       return con;
     }
     catch(Exception e){ 
