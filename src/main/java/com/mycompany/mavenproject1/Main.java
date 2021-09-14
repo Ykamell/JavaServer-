@@ -68,7 +68,7 @@ public class Main {
   public static Connection getConnection() {
     try{
       Class.forName("com.mysql.cj.jdbc.Driver");  
-      Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/findmytaxi?jdbcCompliantTruncation=false","root","");
+      Connection con=DriverManager.getConnection("jdbc:mysql://3.17.36.193:3306/findmytaxi?jdbcCompliantTruncation=false","root","");
       return con;
     }
     catch(Exception e){ 
