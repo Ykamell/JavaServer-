@@ -68,9 +68,9 @@ public class Main {
 
   public static Connection getConnection() {
     try{
-      host = System.getenv("FINDMYTAXI_HOST");
-      password = System.getenv("FINDMYTAXI_PASSWORD");
-      user = System.getenv("FINDMYTAXI_USER");
+      host = System.getProperty("FINDMYTAXI_HOST");
+      password = System.getProperty("FINDMYTAXI_PASSWORD");
+      user = System.getProperty("FINDMYTAXI_USER");
       Class.forName("com.mysql.cj.jdbc.Driver");  
       Connection con=DriverManager.getConnection("jdbc:mysql://" + host + ":3306/findmytaxi?jdbcCompliantTruncation=false",user,password);
       return con;
